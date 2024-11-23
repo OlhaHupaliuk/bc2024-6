@@ -13,7 +13,6 @@ services:
       - 9229:9229
       - 8000:8000
     command: npx nodemon -L --inspect=0.0.0.0 index.js --host 0.0.0.0 --port 8000 --cache ./cache
-
     volumes:
       - .:/usr/src/app
       - ./cache:/usr/src/app/cache
